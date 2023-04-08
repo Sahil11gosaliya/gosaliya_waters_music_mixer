@@ -1,0 +1,56 @@
+Here's an updated version of the HTML code to make it look more professional:
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Player</title>
+    <link rel="stylesheet" href="../css/main.css">
+  </head>
+  <body>
+    <header>
+      <h1>My Audio Player</h1>
+    </header>
+    <main>
+      <div class="player">
+        <div class="audio-container">
+          <audio id="audio-player"></audio>
+        </div>
+        <div class="controls">
+          <button id="prev-btn"><i class="fa fa-step-backward"></i> Backward</button>
+          <button id="play-btn"><i class="fa fa-play"></i> Play</button>
+          <button id="pause-btn"><i class="fa fa-pause"></i> Pause</button>
+          <button id="next-btn">Next <i class="fa fa-step-forward"></i></button>
+          <div class="volume-control">
+            <label for="volume-control">Volume:</label>
+            <input id="volume-control" type="range" min="0" max="1" step="0.1" value="1">
+          </div>
+        </div>
+        <div class="playlist">
+          <ul id="playlist-items">
+            <li data-src="audio/1.mp3">
+              <img src="images/1.jpg" alt="Stranger Things Icon"> <span>Stranger Things</span>
+            </li>
+            <li data-src="audio/2.mp3">
+              <img src="images/2.jpg" alt="Peaky Blinders Icon"> <span>Peaky Blinders</span>
+            </li>
+            <li data-src="audio/3.mp3">
+              <img src="images/3.jpg" alt="Avengers Icon"> <span>Avengers: Infinity War</span>
+            </li>
+            <li data-src="audio/4.mp3">
+              <img src="images/4.jpg" alt="Wonder Woman Icon"> <span>Wonder Woman</span>
+            </li>
+            <li data-src="audio/5.mp3">
+              <img src="images/5.jpg" alt="Thor Icon"> <span>Thor: Ragnarok</span>
+            </li>
+            <li data-src="audio/6.mp3">
+              <img src="images/6.jpg" alt="Jumanji Icon"> <span>Jumanji</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <script src="../java/main.js"></script>
+  </body>
+</html>

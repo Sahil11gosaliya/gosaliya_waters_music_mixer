@@ -1,0 +1,128 @@
+/* Global styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+/* Audio Player Styles */
+.player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.audio-container {
+  position: relative;
+  width: 80%;
+}
+
+audio {
+  display: block;
+  width: 100%;
+  height: 5rem;
+  background-color: #ebebeb;
+  border-radius: 1rem;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0.5rem;
+  height: 10rem;
+}
+
+button {
+  background-color: #383737;
+  color: #fff;
+  font-size: 1.4rem;
+  padding: 1.6rem 3.2rem;
+  margin: 0.4rem 0.8rem;
+  border-radius: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+.fa {
+  margin-left: 0.5rem;
+}
+
+input[type="range"] {
+  width: 71%;
+  margin: 0 1rem;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #333;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 1.6rem;
+  background-color: #ebebeb;
+  border-radius: 1rem;
+}
+
+.playlist {
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+li {
+  padding: 1rem;
+  margin: 0.5rem;
+  background-color: #ebebeb;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+}
+
+li:hover {
+  background-color: #dcdcdc;
+}
+
+.active {
+  background-color: #333;
+  color: #fff;
+}
+
+img {
+  border-radius: 80%;
+  height: 20rem;
+  width: 30rem;
+}
