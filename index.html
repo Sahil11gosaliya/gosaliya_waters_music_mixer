@@ -1,56 +1,108 @@
-Here's an updated version of the HTML code to make it look more professional:
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Audio Player</title>
-    <link rel="stylesheet" href="../css/main.css">
-  </head>
-  <body>
-    <header>
-      <h1>My Audio Player</h1>
-    </header>
-    <main>
-      <div class="player">
-        <div class="audio-container">
-          <audio id="audio-player"></audio>
-        </div>
-        <div class="controls">
-          <button id="prev-btn"><i class="fa fa-step-backward"></i> Backward</button>
-          <button id="play-btn"><i class="fa fa-play"></i> Play</button>
-          <button id="pause-btn"><i class="fa fa-pause"></i> Pause</button>
-          <button id="next-btn">Next <i class="fa fa-step-forward"></i></button>
-          <div class="volume-control">
-            <label for="volume-control">Volume:</label>
-            <input id="volume-control" type="range" min="0" max="1" step="0.1" value="1">
-          </div>
-        </div>
-        <div class="playlist">
-          <ul id="playlist-items">
-            <li data-src="audio/1.mp3">
-              <img src="images/1.jpg" alt="Stranger Things Icon"> <span>Stranger Things</span>
-            </li>
-            <li data-src="audio/2.mp3">
-              <img src="images/2.jpg" alt="Peaky Blinders Icon"> <span>Peaky Blinders</span>
-            </li>
-            <li data-src="audio/3.mp3">
-              <img src="images/3.jpg" alt="Avengers Icon"> <span>Avengers: Infinity War</span>
-            </li>
-            <li data-src="audio/4.mp3">
-              <img src="images/4.jpg" alt="Wonder Woman Icon"> <span>Wonder Woman</span>
-            </li>
-            <li data-src="audio/5.mp3">
-              <img src="images/5.jpg" alt="Thor Icon"> <span>Thor: Ragnarok</span>
-            </li>
-            <li data-src="audio/6.mp3">
-              <img src="images/6.jpg" alt="Jumanji Icon"> <span>Jumanji</span>
-            </li>
-          </ul>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Mixer</title>
+  <link rel="stylesheet" href="../css/main.css">
+
+</head>
+
+<body>
+  <header class="head">
+    <h1>WELCOME TO TUNEBOX</h1>
+  </header>
+
+
+  <!--control panel-->
+  <main>
+    <div class="player">
+      <div class="audio-container">
+        <audio id="audio-player"></audio>
+      </div>
+      <div class="controls">
+        <button id="prev-btn"> <img class="icon" src="../images/back.png">
+          <p> Backward </p>
+        </button>
+        <button id="play-btn"><img class="icon" src="../images/play.png">
+          <p> Play </p>
+        </button>
+        <button id="pause-btn"> <img class="icon" src="../images/pause.png">
+          <p> Pause </p>
+        </button>
+        <button id="next-btn"><img class="icon" src="../images/forward.png">
+          <p> Next </p>
+        </button>
+        <div class="volume-control">
+          <label for="volume-control">Volume:</label>
+          <input id="volume-control" type="range" min="0" max="1" step="0.1" value="1">
         </div>
       </div>
-    </main>
-    <script src="../java/main.js"></script>
-  </body>
+
+
+
+<!--playlist -->
+      <div class="playlist">
+        <ul id="playlist-items">
+          <li data-src="audio/1.mp3">
+            <img class="audio_image" src="images/1.jpg" alt="Stranger Things Icon">
+            <p>Stranger Things</p>
+          </li>
+          <li data-src="audio/2.mp3">
+            <img class="audio_image" src="images/2.jpg" alt="Peaky Blinders Icon">
+            <p>Peaky Blinders</p>
+          </li>
+          <li data-src="audio/3.mp3">
+            <img class="audio_image" src="images/3.jpg" alt="Avengers Icon">
+            <p>Avengers: Infinity War</p>
+          </li>
+          <li data-src="audio/4.mp3">
+            <img class="audio_image" src="images/4.jpg" alt="Wonder Woman Icon">
+            <p>Wonder Woman</p>
+          </li>
+          <li data-src="audio/5.mp3">
+            <img class="audio_image" src="images/5.jpg" alt="Thor Icon">
+            <p>Thor: Ragnarok</p>
+          </li>
+          <li data-src="audio/6.mp3">
+            <img class="audio_image" src="images/6.jpg" alt="Jumanji Icon">
+            <p>Jumanji</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+
+  <!--drop area -->
+
+  <div id="drop-area" class="drop-area">
+    <p>Drag and drop an audio clip here from above. Use Control Panel above to use the function </p>
+
+  </div>
+
+
+  <script src="../java/main.js"></script>
+</body>
+
+
+<!--footer  -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <p>&copy; 2023 Tunebox. All clips are copyrighted by motion pictures limited.</p>
+      </div>
+      <div class="col-md-6">
+        <ul class="list-inline">
+          <li class="list-inline-item">Silence!</li>
+          <li class="list-inline-item">Drum Rolls!!</li>
+          <li class="list-inline-item">Music!!!</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
 </html>
